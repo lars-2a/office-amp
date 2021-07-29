@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name OfficeAmp)(type Legacy)(uri ${KIPRJMOD}/office_amp.lib)(options "")(descr ""))
+  (lib (name office_amp-rescue)(type Legacy)(uri ${KIPRJMOD}/office_amp-rescue.lib)(options "")(descr ""))
+)
