@@ -189,7 +189,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 1750 4550 2250
 Wire Wire Line
-	4550 2250 4800 2250
+	4550 2250 4750 2250
 Wire Wire Line
 	4550 1750 4550 950 
 Wire Wire Line
@@ -197,7 +197,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 950  5900 2250
 Wire Wire Line
-	5900 2250 6500 2250
+	5900 2250 6450 2250
 Connection ~ 4550 1750
 $Comp
 L Diode:1N4148W D1
@@ -283,13 +283,13 @@ Wire Wire Line
 Wire Wire Line
 	7600 850  7600 2250
 Wire Wire Line
-	7600 2250 7950 2250
+	7600 2250 7850 2250
 Wire Wire Line
 	7600 850  9050 850 
 Wire Wire Line
 	9050 850  9050 2250
 Wire Wire Line
-	9050 2250 9500 2250
+	9050 2250 9350 2250
 Connection ~ 7600 850 
 $Comp
 L Diode:1N4148W D6
@@ -326,12 +326,12 @@ Wire Wire Line
 $Comp
 L OfficeAmp:5V_BT #PWR029
 U 1 1 6079E5EC
-P 8750 2650
-F 0 "#PWR029" H 8750 2500 50  0001 C CNN
-F 1 "5V_BT" H 8765 2823 50  0000 C CNN
-F 2 "" H 8750 2650 50  0001 C CNN
-F 3 "" H 8750 2650 50  0001 C CNN
-	1    8750 2650
+P 8850 2750
+F 0 "#PWR029" H 8850 2600 50  0001 C CNN
+F 1 "5V_BT" H 8865 2923 50  0000 C CNN
+F 2 "" H 8850 2750 50  0001 C CNN
+F 3 "" H 8850 2750 50  0001 C CNN
+	1    8850 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -352,78 +352,10 @@ Wire Wire Line
 	3600 1750 3700 1750
 Wire Wire Line
 	3600 1550 3600 1750
-$Comp
-L MyLib:V+ #PWR?
-U 1 1 607A519A
-P 4750 1650
-AR Path="/607A519A" Ref="#PWR?"  Part="1" 
-AR Path="/5EC853EB/607A519A" Ref="#PWR?"  Part="1" 
-AR Path="/5ED110E5/607A519A" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 4750 1500 50  0001 C CNN
-F 1 "V+" H 4765 1823 50  0000 C CNN
-F 2 "" H 4750 1650 50  0001 C CNN
-F 3 "" H 4750 1650 50  0001 C CNN
-	1    4750 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L MyLib:V+ #PWR?
-U 1 1 607A57C7
-P 6450 1650
-AR Path="/607A57C7" Ref="#PWR?"  Part="1" 
-AR Path="/5EC853EB/607A57C7" Ref="#PWR?"  Part="1" 
-AR Path="/5ED110E5/607A57C7" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 6450 1500 50  0001 C CNN
-F 1 "V+" H 6465 1823 50  0000 C CNN
-F 2 "" H 6450 1650 50  0001 C CNN
-F 3 "" H 6450 1650 50  0001 C CNN
-	1    6450 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L MyLib:V+ #PWR?
-U 1 1 607A64E7
-P 7900 1650
-AR Path="/607A64E7" Ref="#PWR?"  Part="1" 
-AR Path="/5EC853EB/607A64E7" Ref="#PWR?"  Part="1" 
-AR Path="/5ED110E5/607A64E7" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 7900 1500 50  0001 C CNN
-F 1 "V+" H 7915 1823 50  0000 C CNN
-F 2 "" H 7900 1650 50  0001 C CNN
-F 3 "" H 7900 1650 50  0001 C CNN
-	1    7900 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 1650 4750 1700
 Wire Wire Line
 	4750 1700 4950 1700
 Wire Wire Line
-	6450 1650 6450 1700
-Wire Wire Line
 	6450 1700 6650 1700
-Wire Wire Line
-	7900 1650 7900 1700
-Wire Wire Line
-	7900 1700 8100 1700
-$Comp
-L MyLib:V+ #PWR?
-U 1 1 607ABB10
-P 9450 1650
-AR Path="/607ABB10" Ref="#PWR?"  Part="1" 
-AR Path="/5EC853EB/607ABB10" Ref="#PWR?"  Part="1" 
-AR Path="/5ED110E5/607ABB10" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 9450 1500 50  0001 C CNN
-F 1 "V+" H 9465 1823 50  0000 C CNN
-F 2 "" H 9450 1650 50  0001 C CNN
-F 3 "" H 9450 1650 50  0001 C CNN
-	1    9450 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 1700 9450 1700
-Wire Wire Line
-	9450 1700 9450 1650
 $Comp
 L OfficeAmp:GND_BT #PWR018
 U 1 1 607D8602
@@ -549,4 +481,134 @@ Wire Wire Line
 	6350 3150 6350 2750
 Wire Wire Line
 	6350 2750 6500 2750
+Wire Wire Line
+	4750 1700 4750 2250
+Connection ~ 4750 2250
+Wire Wire Line
+	4750 2250 4800 2250
+Wire Wire Line
+	6450 1700 6450 2250
+Connection ~ 6450 2250
+Wire Wire Line
+	6450 2250 6500 2250
+Wire Wire Line
+	8100 1700 7850 1700
+Wire Wire Line
+	7850 1700 7850 2250
+Connection ~ 7850 2250
+Wire Wire Line
+	7850 2250 7950 2250
+Wire Wire Line
+	9650 1700 9350 1700
+Wire Wire Line
+	9350 1700 9350 2250
+Connection ~ 9350 2250
+Wire Wire Line
+	9350 2250 9500 2250
+$Comp
+L power:GNDREF #PWR?
+U 1 1 610EAA70
+P 5550 2300
+AR Path="/610EAA70" Ref="#PWR?"  Part="1" 
+AR Path="/5EC853EB/610EAA70" Ref="#PWR?"  Part="1" 
+AR Path="/5ED110E5/610EAA70" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 5550 2050 50  0001 C CNN
+F 1 "GNDREF" H 5555 2127 50  0000 C CNN
+F 2 "" H 5550 2300 50  0001 C CNN
+F 3 "" H 5550 2300 50  0001 C CNN
+	1    5550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 610EF8CE
+P 7300 2300
+AR Path="/610EF8CE" Ref="#PWR?"  Part="1" 
+AR Path="/5EC853EB/610EF8CE" Ref="#PWR?"  Part="1" 
+AR Path="/5ED110E5/610EF8CE" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 7300 2050 50  0001 C CNN
+F 1 "GNDREF" H 7305 2127 50  0000 C CNN
+F 2 "" H 7300 2300 50  0001 C CNN
+F 3 "" H 7300 2300 50  0001 C CNN
+	1    7300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 610F0B9C
+P 8700 2300
+AR Path="/610F0B9C" Ref="#PWR?"  Part="1" 
+AR Path="/5EC853EB/610F0B9C" Ref="#PWR?"  Part="1" 
+AR Path="/5ED110E5/610F0B9C" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 8700 2050 50  0001 C CNN
+F 1 "GNDREF" H 8705 2127 50  0000 C CNN
+F 2 "" H 8700 2300 50  0001 C CNN
+F 3 "" H 8700 2300 50  0001 C CNN
+	1    8700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 610F15A7
+P 10250 2300
+AR Path="/610F15A7" Ref="#PWR?"  Part="1" 
+AR Path="/5EC853EB/610F15A7" Ref="#PWR?"  Part="1" 
+AR Path="/5ED110E5/610F15A7" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 10250 2050 50  0001 C CNN
+F 1 "GNDREF" H 10255 2127 50  0000 C CNN
+F 2 "" H 10250 2300 50  0001 C CNN
+F 3 "" H 10250 2300 50  0001 C CNN
+	1    10250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2650 8750 2750
+Wire Wire Line
+	8750 2750 8850 2750
+Wire Wire Line
+	8700 2250 8700 2300
+Connection ~ 8700 2250
+Wire Wire Line
+	10250 2250 10250 2300
+Connection ~ 10250 2250
+Wire Wire Line
+	7300 2250 7300 2300
+Connection ~ 7300 2250
+Wire Wire Line
+	5550 2250 5550 2300
+Connection ~ 5550 2250
+$Comp
+L Connector:Conn_01x03_Female J8
+U 1 1 6111171D
+P 1050 5550
+F 0 "J8" H 942 5835 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 942 5744 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1050 5550 50  0001 C CNN
+F 3 "~" H 1050 5550 50  0001 C CNN
+	1    1050 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OfficeAmp:GND_USB #PWR020
+U 1 1 61118F85
+P 2150 5450
+F 0 "#PWR020" H 2150 5200 50  0001 C CNN
+F 1 "GND_USB" H 2155 5277 50  0000 C CNN
+F 2 "" H 2150 5450 50  0001 C CNN
+F 3 "" H 2150 5450 50  0001 C CNN
+	1    2150 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 5550 2    50   Output ~ 0
+R-In-USB
+Text GLabel 1350 5650 2    50   Output ~ 0
+L-In-USB
+Wire Wire Line
+	1250 5550 1350 5550
+Wire Wire Line
+	1250 5650 1350 5650
+Wire Wire Line
+	1250 5450 2150 5450
+Text Notes 650  5100 0    118  Italic 0
+USB-Input
 $EndSCHEMATC

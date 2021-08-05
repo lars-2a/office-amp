@@ -193,17 +193,6 @@ F 3 "" H 4450 2600 50  0001 C CNN
 $EndComp
 Text Notes 750  1150 0    118  Italic 0
 Reverse Protection
-$Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 5ECA2AC4
-P 3300 1200
-F 0 "JP1" H 3300 1435 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3300 1344 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3300 1200 50  0001 C CNN
-F 3 "~" H 3300 1200 50  0001 C CNN
-	1    3300 1200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 1200 2800 1200
 Wire Wire Line
@@ -220,71 +209,14 @@ Wire Wire Line
 Wire Wire Line
 	3800 2750 3600 2750
 Connection ~ 3800 2750
-$Comp
-L Jumper:Jumper_2_Open JP2
-U 1 1 5ECCBB80
-P 3300 1600
-F 0 "JP2" H 3300 1835 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3300 1744 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3300 1600 50  0001 C CNN
-F 3 "~" H 3300 1600 50  0001 C CNN
-	1    3300 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_2_Open JP3
-U 1 1 5ECCC0A7
-P 3300 1950
-F 0 "JP3" H 3300 2185 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3300 2094 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3300 1950 50  0001 C CNN
-F 3 "~" H 3300 1950 50  0001 C CNN
-	1    3300 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_2_Open JP4
-U 1 1 5ECD321D
-P 3300 2300
-F 0 "JP4" H 3300 2535 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3300 2444 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3300 2300 50  0001 C CNN
-F 3 "~" H 3300 2300 50  0001 C CNN
-	1    3300 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 2300 2800 2300
-Connection ~ 2800 2300
-Wire Wire Line
-	2800 2300 2800 2750
-Wire Wire Line
-	3100 1950 2800 1950
-Connection ~ 2800 1950
-Wire Wire Line
-	2800 1950 2800 2300
 Wire Wire Line
 	3100 1600 2800 1600
 Wire Wire Line
 	2800 1200 2800 1600
 Connection ~ 2800 1600
 Wire Wire Line
-	2800 1600 2800 1950
-Wire Wire Line
 	3500 1600 3800 1600
 Connection ~ 3800 1600
-Wire Wire Line
-	3800 1600 3800 1950
-Wire Wire Line
-	3500 1950 3800 1950
-Connection ~ 3800 1950
-Wire Wire Line
-	3800 1950 3800 2300
-Wire Wire Line
-	3500 2300 3800 2300
-Connection ~ 3800 2300
-Wire Wire Line
-	3800 2300 3800 2750
 Text Label 1600 2750 0    50   ~ 0
 Vin
 $Comp
@@ -296,17 +228,6 @@ F 1 "Jack-DC" H 1257 3084 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1250 2810 50  0001 C CNN
 F 3 "~" H 1250 2810 50  0001 C CNN
 	1    1200 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L MyLib:PGND #PWR0116
-U 1 1 5F83C9AA
-P 12400 3100
-F 0 "#PWR0116" H 12400 2850 50  0001 C CNN
-F 1 "PGND" H 12405 2927 50  0000 C CNN
-F 2 "" H 12400 3100 50  0001 C CNN
-F 3 "" H 12400 3100 50  0001 C CNN
-	1    12400 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -378,19 +299,6 @@ Wire Wire Line
 	9000 1950 9000 2000
 Text Notes 8900 1050 0    118  Italic 0
 ±5V DCDC Input and Bluetooth
-$Comp
-L power:GNDREF #PWR?
-U 1 1 602CF915
-P 5250 -2550
-AR Path="/602CF915" Ref="#PWR?"  Part="1" 
-AR Path="/5EC853EB/602CF915" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 5250 -2800 50  0001 C CNN
-F 1 "GNDREF" H 5255 -2723 50  0000 C CNN
-F 2 "" H 5250 -2550 50  0001 C CNN
-F 3 "" H 5250 -2550 50  0001 C CNN
-	1    5250 -2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14150 1700 14150 1850
 $Comp
@@ -402,17 +310,6 @@ F 1 "TBA_2-2421" H 13200 2676 50  0000 C CNN
 F 2 "MyLib:SIP-7" H 13200 1950 50  0001 C CNN
 F 3 "https://www.tracopower.com/products/tmr2.pdf" H 13200 1800 50  0001 C CNN
 	1    13200 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 607BCEC5
-P 14050 2600
-F 0 "C9" H 14165 2646 50  0000 L CNN
-F 1 "10µF" H 14165 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 14088 2450 50  0001 C CNN
-F 3 "~" H 14050 2600 50  0001 C CNN
-	1    14050 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -445,37 +342,9 @@ Wire Wire Line
 	14050 2850 14050 3000
 Connection ~ 14050 2850
 Wire Wire Line
-	12400 2500 12400 3100
-Connection ~ 12400 2500
-Wire Wire Line
 	12400 2500 12700 2500
 Wire Wire Line
 	12400 2450 12400 2500
-Wire Wire Line
-	14050 2450 14050 2300
-Wire Wire Line
-	14050 2300 14150 2300
-Connection ~ 14050 2300
-Wire Wire Line
-	14150 2300 14550 2300
-Connection ~ 14150 2300
-Wire Wire Line
-	14150 2200 14150 2300
-Wire Wire Line
-	14550 2300 14550 2350
-Wire Wire Line
-	13700 2300 14050 2300
-$Comp
-L OfficeAmp:GND_Input #PWR0124
-U 1 1 5FC70DF1
-P 14550 2350
-F 0 "#PWR0124" H 14550 2100 50  0001 C CNN
-F 1 "GND_Input" H 14555 2177 50  0000 C CNN
-F 2 "" H 14550 2350 50  0001 C CNN
-F 3 "" H 14550 2350 50  0001 C CNN
-	1    14550 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L MyLib:TBA_2-XXXX U2
 U 1 1 608E6D0F
@@ -617,4 +486,80 @@ F 3 "" H 11150 2200 50  0001 C CNN
 $EndComp
 Text Notes 5500 1100 0    118  Italic 0
 Ground Coupling PGND GNDREF
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5ECA2AC4
+P 3300 1200
+F 0 "JP1" H 3300 1435 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3300 1344 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3300 1200 50  0001 C CNN
+F 3 "~" H 3300 1200 50  0001 C CNN
+	1    3300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 5ECCBB80
+P 3300 1600
+F 0 "JP2" H 3300 1835 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3300 1744 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3300 1600 50  0001 C CNN
+F 3 "~" H 3300 1600 50  0001 C CNN
+	1    3300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1600 2800 2750
+Wire Wire Line
+	3800 1600 3800 2750
+$Comp
+L power:GNDREF #PWR?
+U 1 1 611834B7
+P 12400 2700
+AR Path="/611834B7" Ref="#PWR?"  Part="1" 
+AR Path="/5EC853EB/611834B7" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 12400 2450 50  0001 C CNN
+F 1 "GNDREF" H 12405 2527 50  0000 C CNN
+F 2 "" H 12400 2700 50  0001 C CNN
+F 3 "" H 12400 2700 50  0001 C CNN
+	1    12400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 2700 12400 2500
+Connection ~ 12400 2500
+$Comp
+L Device:C C9
+U 1 1 607BCEC5
+P 14050 2600
+F 0 "C9" H 14165 2646 50  0000 L CNN
+F 1 "10µF" H 14165 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 14088 2450 50  0001 C CNN
+F 3 "~" H 14050 2600 50  0001 C CNN
+	1    14050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L OfficeAmp:GND_Input #PWR0111
+U 1 1 61201B8C
+P 14550 2300
+F 0 "#PWR0111" H 14550 2050 50  0001 C CNN
+F 1 "GND_Input" H 14555 2127 50  0000 C CNN
+F 2 "" H 14550 2300 50  0001 C CNN
+F 3 "" H 14550 2300 50  0001 C CNN
+	1    14550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 2300 14050 2300
+Wire Wire Line
+	14150 2200 14150 2300
+Connection ~ 14150 2300
+Wire Wire Line
+	14150 2300 14550 2300
+Wire Wire Line
+	14050 2300 14050 2450
+Connection ~ 14050 2300
+Wire Wire Line
+	14050 2300 14150 2300
 $EndSCHEMATC
