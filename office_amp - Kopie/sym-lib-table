@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name OfficeAmp)(type Legacy)(uri C:/Users/Lars/Documents/kicad_projects/office_amp/office_amp/office_amp.lib)(options "")(descr ""))
-  (lib (name office_amp-rescue)(type Legacy)(uri ${KIPRJMOD}/office_amp-rescue.lib)(options "")(descr ""))
-)
