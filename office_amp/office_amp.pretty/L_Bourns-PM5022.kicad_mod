@@ -1,6 +1,6 @@
 (footprint "L_Bourns-PM5022" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61F970C8)
+  (tedit 6205522B)
   (attr through_hole)
   (fp_text reference "REF**" (at 0 -11) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
@@ -77,8 +77,8 @@
   (fp_line (start -9.2964 1.905) (end -9.2964 -1.905) (layer "F.Fab") (width 0.1) (tstamp dd01ca49-c8a2-4580-af9a-2e9bce9769bc))
   (fp_line (start 9.2964 -1.905) (end 9.2964 1.905) (layer "F.Fab") (width 0.1) (tstamp f8e927af-4836-4b0f-8a57-dbca5a18a442))
   (fp_circle (center -8.9154 0) (end -8.9154 0) (layer "F.Fab") (width 0.1) (fill none) (tstamp f88265e8-a27a-4259-b3ad-7df91a571c60))
-  (pad "1" smd rect (at -7.6835 0) (size 2.921 2.794) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b45faf1e-b7a2-4d73-9833-db84a2fde78b))
-  (pad "2" smd rect (at 7.6835 0) (size 2.921 2.794) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e5f06cd2-492e-41b2-8ded-13a3fa1042bb))
+  (pad "1" smd rect (at -7.6835 0) (size 6.705 2.794) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b45faf1e-b7a2-4d73-9833-db84a2fde78b))
+  (pad "2" smd rect (at 7.6835 0) (size 6.705 2.794) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e5f06cd2-492e-41b2-8ded-13a3fa1042bb))
   (model "${KIPRJMOD}/office_amp.pretty/IND_PM5022.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))

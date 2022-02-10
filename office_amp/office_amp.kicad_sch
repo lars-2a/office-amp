@@ -355,14 +355,14 @@
     (path "/00000000-0000-0000-0000-0000602bbdaa/7e73ca0b-85ea-4cba-a74a-418002970cca"
       (reference "#PWR0131") (unit 1) (value "-5V") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005ed110e5/00000000-0000-0000-0000-00005fcb6c09"
-      (reference "#PWR0137") (unit 1) (value "5V_BT") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005ed110e5/15020d7f-5725-4cd6-9576-e1b676d631b3"
-      (reference "#PWR?") (unit 1) (value "GND_USB") (footprint "")
+      (reference "#PWR0132") (unit 1) (value "GND_USB") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005ed110e5/c976a384-4574-48a8-95b3-389f100b0740"
-      (reference "#PWR?") (unit 1) (value "GND_USB") (footprint "")
+      (reference "#PWR0133") (unit 1) (value "GND_USB") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005ed110e5/00000000-0000-0000-0000-00005fcb6c09"
+      (reference "#PWR0137") (unit 1) (value "5V_BT") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005ec853eb/00000000-0000-0000-0000-00005ec94909"
       (reference "C1") (unit 1) (value "22nF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
@@ -675,6 +675,69 @@
     )
     (path "/00000000-0000-0000-0000-00005ed110e5/da58d22f-96ce-49b6-bd53-4fdc442ef6af"
       (reference "STAR5") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ec853eb/aaaaa002-a1e6-4259-8dbc-ade83d6c7ebb"
+      (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ec853eb/5db4c5c3-9e46-42dd-9b64-72e55324398b"
+      (reference "TP2") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded")
+    )
+    (path "/00000000-0000-0000-0000-00005ec853eb/384b7d45-d2d0-44ab-9fb9-0be0ff865f91"
+      (reference "TP3") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ec853eb/bb2408b6-854c-4a2b-a8f8-4434b56d5e18"
+      (reference "TP4") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ec853eb/028f6ff8-a15a-452c-b354-d832e2efd818"
+      (reference "TP5") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded")
+    )
+    (path "/00000000-0000-0000-0000-00005ec853eb/6c8daa04-8052-4bd0-96fb-348698b66842"
+      (reference "TP6") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ec853eb/3b9b9fa8-cf1b-4f18-9ce3-8ccbde61c237"
+      (reference "TP7") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ed110e5/c4933ec8-0848-40f5-8323-973a312b7359"
+      (reference "TP8") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ed110e5/fcf56a6f-e947-45b3-a55b-41df452a30a8"
+      (reference "TP10") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ed110e5/1f3c18b8-377f-4478-ae19-2aec4213ba7c"
+      (reference "TP11") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ed110e5/7339759f-ad52-4354-955c-2d22bec4072f"
+      (reference "TP13") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-0000602bbdaa/fe8724b8-2d50-42a8-9935-c01b8c8285d7"
+      (reference "TP14") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-0000602bbdaa/798fd1f7-5caa-40fa-b3a6-d1d4803d73e2"
+      (reference "TP15") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-0000602bbdaa/92900628-9d0a-45d7-812e-bb83f6822703"
+      (reference "TP20") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-0000602bbdaa/97f49b70-b158-4f68-961b-f464028a26eb"
+      (reference "TP21") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-0000602bbdaa/c4e8c1a7-abea-49e9-88e3-9a401ee7e8e5"
+      (reference "TP22") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-0000602bbdaa/db63cc97-ac17-4f71-b48e-8872c5683830"
+      (reference "TP23") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-000060794134/bfc9e505-58c1-4c7c-884c-7553b191d3fe"
+      (reference "TP24") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-000060794134/5f2ef805-75c8-4fb0-adcb-59325d2cc6be"
+      (reference "TP25") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-000060794134/0b91fcb7-e475-4731-9414-5ecd442383ef"
+      (reference "TP26") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-000060794134/241ab1b7-2ca7-4329-b16a-b43daa565792"
+      (reference "TP27") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
     )
     (path "/00000000-0000-0000-0000-00005ec853eb/00000000-0000-0000-0000-00005ec948fd"
       (reference "U1") (unit 1) (value "LM74700") (footprint "Package_TO_SOT_SMD:SOT-23-6")
