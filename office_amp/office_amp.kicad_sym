@@ -623,7 +623,7 @@
     )
     (symbol "GND_USB_1_1"
       (pin power_in line (at 0 0 270) (length 0) hide
-        (name "GND_BT" (effects (font (size 1.27 1.27))))
+        (name "GND_USB" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
     )

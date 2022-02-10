@@ -141,7 +141,7 @@
     (property "ki_keywords" "digital potentiometer" (id 4) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_description" "Dual Log Audio Digital Potentiometer, 64 positions, TSSOP-16" (id 5) (at 0 0 0)
+    (property "ki_description" "Dual Log Audio Digital Potentiometer, 64 positions, SO-16 (150mil)" (id 5) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm*" (id 6) (at 0 0 0)

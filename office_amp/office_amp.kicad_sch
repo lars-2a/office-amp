@@ -127,12 +127,6 @@
     (path "/00000000-0000-0000-0000-00005ed110e5/00000000-0000-0000-0000-0000607a2b83"
       (reference "#PWR019") (unit 1) (value "V+") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005ed110e5/00000000-0000-0000-0000-000061118f85"
-      (reference "#PWR020") (unit 1) (value "GND_USB") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005ed110e5/00000000-0000-0000-0000-0000607465a7"
-      (reference "#PWR021") (unit 1) (value "GND_USB") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005ec853eb/1d9b0446-65b6-4db6-a887-8216cfa0063a"
       (reference "#PWR022") (unit 1) (value "GNDD") (footprint "")
     )
@@ -358,11 +352,17 @@
     (path "/00000000-0000-0000-0000-0000602bbdaa/b535bdab-e745-4e60-b7b7-1a1a9a0d7b00"
       (reference "#PWR0130") (unit 1) (value "+3V3") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-0000602bbdaa/7e73ca0b-85ea-4cba-a74a-418002970cca"
+      (reference "#PWR0131") (unit 1) (value "-5V") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005ed110e5/00000000-0000-0000-0000-00005fcb6c09"
       (reference "#PWR0137") (unit 1) (value "5V_BT") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000602bbdaa/7e73ca0b-85ea-4cba-a74a-418002970cca"
-      (reference "#PWR?") (unit 1) (value "-5V") (footprint "")
+    (path "/00000000-0000-0000-0000-00005ed110e5/15020d7f-5725-4cd6-9576-e1b676d631b3"
+      (reference "#PWR?") (unit 1) (value "GND_USB") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005ed110e5/c976a384-4574-48a8-95b3-389f100b0740"
+      (reference "#PWR?") (unit 1) (value "GND_USB") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005ec853eb/00000000-0000-0000-0000-00005ec94909"
       (reference "C1") (unit 1) (value "22nF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
