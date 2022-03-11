@@ -1,0 +1,16 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 6283451d-b563-4a25-b03d-d34d800f8272)
+
+  (paper "A4")
+
+  (title_block
+    (title "ESP-AUDIO")
+    (date "2022-03-11")
+    (rev "1")
+  )
+
+  (lib_symbols
+  )
+
+)

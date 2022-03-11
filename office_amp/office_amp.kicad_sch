@@ -85,6 +85,9 @@
     (path "/00000000-0000-0000-0000-0000602bbdaa/00000000-0000-0000-0000-0000602d0454"
       (reference "#PWR03") (unit 1) (value "GNDREF") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005ed110e5/edcb5997-6bc9-4ea2-977d-60a7bf4d83c2"
+      (reference "#PWR04") (unit 1) (value "GND_BT") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-0000602bbdaa/00000000-0000-0000-0000-0000602dbbe5"
       (reference "#PWR06") (unit 1) (value "V+") (footprint "")
     )
@@ -225,9 +228,6 @@
     )
     (path "/00000000-0000-0000-0000-00005ed110e5/ac550a8a-e56d-4fda-9ec6-47dd26511bdf"
       (reference "#PWR054") (unit 1) (value "V+") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000602bbdaa/482602f8-d347-4e8f-8da4-099542102d3f"
-      (reference "#PWR055") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000602bbdaa/0357d699-09c6-42f2-b7b7-98d154cfb277"
       (reference "#PWR056") (unit 1) (value "GNDA") (footprint "")
@@ -484,6 +484,9 @@
     (path "/00000000-0000-0000-0000-0000602bbdaa/a9958d88-2201-4946-9161-45758ee65281"
       (reference "C40") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
+    (path "/00000000-0000-0000-0000-00005ed110e5/b11e69a7-bdc0-4cb5-9cb4-d14a5c12e472"
+      (reference "C41") (unit 1) (value "10µF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-00005ed110e5/00000000-0000-0000-0000-00006075b088"
       (reference "D1") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
     )
@@ -543,6 +546,9 @@
     )
     (path "/00000000-0000-0000-0000-0000602bbdaa/00000000-0000-0000-0000-00006064925c"
       (reference "L2") (unit 1) (value "22µH") (footprint "office_amp:L_Bourns-PM5022")
+    )
+    (path "/00000000-0000-0000-0000-00005ed110e5/293e0199-3a1b-47d1-baf7-67818bf7aec8"
+      (reference "L3") (unit 1) (value "100µH") (footprint "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC")
     )
     (path "/00000000-0000-0000-0000-00005ec853eb/00000000-0000-0000-0000-00005ec9494a"
       (reference "Q1") (unit 1) (value "DMT6012LSS") (footprint "MyLib:N-CH-SO-8_5.3x6.2mm_P1.27mm")
@@ -624,12 +630,6 @@
     )
     (path "/00000000-0000-0000-0000-00005ed110e5/81133953-d26c-4819-aaf3-3cb16b0f7cbd"
       (reference "R18") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-0000602bbdaa/59d67966-dbf8-4412-9679-aee9c0695179"
-      (reference "R19") (unit 1) (value "4k7") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-0000602bbdaa/d9ad0d1f-b767-466f-8876-2980166604d5"
-      (reference "R20") (unit 1) (value "4k7") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-0000602bbdaa/ec976b57-15ad-425f-b3dc-37d60d369b3e"
       (reference "R21") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
