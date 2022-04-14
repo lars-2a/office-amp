@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name "office amp")(type "KiCad")(uri "/home/lars/kicad/office-amp/office_amp/office_amp.kicad_sym")(options "")(descr ""))
+  (lib (name "office amp")(type "KiCad")(uri "../office_amp/office_amp.kicad_sym")(options "")(descr ""))
 )
