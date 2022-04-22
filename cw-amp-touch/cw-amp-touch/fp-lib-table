@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "office-amp")(type "KiCad")(uri "/home/lars/kicad/office-amp/office_amp/office_amp.pretty")(options "")(descr ""))
+)
