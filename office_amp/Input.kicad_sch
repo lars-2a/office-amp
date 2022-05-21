@@ -2184,6 +2184,10 @@
     (effects (font (size 2.9972 2.9972) italic) (justify left bottom))
     (uuid c94e860e-67b8-404e-8eff-17274603c026)
   )
+  (text "relais in reihe" (at 151.765 82.55 0)
+    (effects (font (size 8 8)) (justify left bottom))
+    (uuid e9c78a95-6852-4d49-a1bf-9712d0dd103d)
+  )
 
   (global_label "L-In-An" (shape output) (at 64.77 35.56 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
