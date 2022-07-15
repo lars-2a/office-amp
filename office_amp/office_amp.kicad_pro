@@ -61,7 +61,11 @@
         "courtyards_overlap|95714610|62250001|77400ccd-277f-4c1a-ab13-786ff9eabdfd|00000000-0000-0000-0000-00005f53cd55",
         "silk_over_copper|90000000|62400000|e342f8d7-ca8a-47a5-a679-3c984454e9a5|dade28ff-aa85-4c35-9001-eced26d73106",
         "silk_over_copper|90000000|71600000|e342f8d7-ca8a-47a5-a679-3c984454e9a5|255dfc0d-3fd6-46c6-9953-70edf309d939",
-        "silk_over_copper|94000000|62400000|dade28ff-aa85-4c35-9001-eced26d73106|1a784115-8eff-47b2-8301-ef94d92f851c"
+        "silk_over_copper|94000000|62400000|dade28ff-aa85-4c35-9001-eced26d73106|1a784115-8eff-47b2-8301-ef94d92f851c",
+        "silk_overlap|156670000|109885000|c93d7aa2-4e20-4102-bb0a-71e918e74ab6|26217dc7-6727-4e75-bfa7-5cbb997273dd",
+        "silk_overlap|156670000|109885000|c93d7aa2-4e20-4102-bb0a-71e918e74ab6|642187bc-cc79-402b-a8af-ec15be749019",
+        "silk_overlap|165670000|109885000|db596205-a740-4300-b2c4-c29bd999e559|a9d96d6f-d469-4bf9-8204-fb78f9af4c76",
+        "silk_overlap|165670000|109885000|db596205-a740-4300-b2c4-c29bd999e559|d8a123f2-3adf-4d8a-8dab-4ce1eaebcc09"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -127,7 +131,8 @@
         "use_height_for_length_calcs": true
       },
       "track_widths": [
-        0.0
+        0.0,
+        25.0
       ],
       "via_dimensions": [
         {
