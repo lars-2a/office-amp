@@ -48,8 +48,19 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "silk_overlap|136140000|116000000|e07a41d2-8e47-41c9-b10f-1684dbde8b25|60eb98c6-6411-403b-853f-e8733af779ab",
+        "silk_overlap|136140000|116000000|e07a41d2-8e47-41c9-b10f-1684dbde8b25|62ae8980-36a6-4120-b4d3-e7093bb54fb2",
+        "silk_overlap|148960000|115990000|211973b3-a9fd-410e-810e-6efbbf50c29b|b57ab10f-05e4-408c-acbd-e0f4f4cd9ab6",
+        "silk_overlap|148960000|116000000|211973b3-a9fd-410e-810e-6efbbf50c29b|dea04a5c-8402-4933-8dfd-baf73c68cff0"
+      ],
       "meta": {
         "version": 2
       },
@@ -112,8 +123,15 @@
         "solder_mask_min_width": 0.0,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -350,7 +368,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.4,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0

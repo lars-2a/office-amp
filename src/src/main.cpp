@@ -31,11 +31,11 @@ void setup() {
   pinMode(6, INPUT);
   pinMode(7, INPUT);
 
-  while(true){
-    i2c_scanner();
-    int val = ds1882init();
-    Serial.println(val);
-  }
+  // while(true){
+  //   i2c_scanner();
+  //   int val = ds1882init();
+  //   Serial.println(val);
+  // }
 
   touch_sensor.begin();
   Serial.print("reseting...");

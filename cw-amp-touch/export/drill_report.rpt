@@ -1,5 +1,5 @@
 Drill report for cw-amp-touch.kicad_pcb
-Created on Mon 18 Jul 2022 01:01:05 PM CEST
+Created on Wed 20 Jul 2022 03:40:37 AM CEST
 
 Copper Layer Stackup:
     =============================================================
@@ -10,10 +10,9 @@ Copper Layer Stackup:
 Drill file 'cw-amp-touch-PTH-drl.gbr' contains
     plated through holes:
     =============================================================
-    T1  0.800mm  0.0315"  (12 holes)
-    T2  1.000mm  0.0394"  (10 holes)
+    T1  0.800mm  0.0315"  (6 holes)
 
-    Total plated holes count 22
+    Total plated holes count 6
 
 
 Drill file 'cw-amp-touch-NPTH-drl.gbr' contains
