@@ -1,3 +1,6 @@
+#ifndef PCF5874_H_
+#define PCF5874_H_
+
 #include "Wire.h"
 
 class PCF8574{
@@ -16,3 +19,5 @@ private:
     uint8_t portStartSet = 0b00000000;
     uint8_t portSet = 0b00000000;
 };
+
+#endif

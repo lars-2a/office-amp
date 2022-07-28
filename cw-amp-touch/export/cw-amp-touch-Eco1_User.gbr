@@ -1,14 +1,25 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,6.0.6-2.fc36*
-G04 #@! TF.CreationDate,2022-07-20T03:40:37+02:00*
+G04 #@! TF.CreationDate,2022-07-22T01:27:19+02:00*
 G04 #@! TF.ProjectId,cw-amp-touch,63772d61-6d70-42d7-946f-7563682e6b69,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Other,ECO1*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 6.0.6-2.fc36) date 2022-07-20 03:40:37*
+G04 Created by KiCad (PCBNEW 6.0.6-2.fc36) date 2022-07-22 01:27:19*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
+%ADD10C,1.500000*%
 G04 APERTURE END LIST*
+D10*
+G04 #@! TO.C,FID1*
+X135000000Y-85000000D03*
+G04 #@! TD*
+G04 #@! TO.C,FID2*
+X208000000Y-85000000D03*
+G04 #@! TD*
+G04 #@! TO.C,FID3*
+X208000000Y-116000000D03*
+G04 #@! TD*
 M02*

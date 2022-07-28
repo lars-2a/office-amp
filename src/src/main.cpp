@@ -22,6 +22,9 @@ AT42QT2120 touch_sensor(Wire, CHANGE_PIN);
 void setup() {
   // put your setup code here, to run once:
   // Wire.begin();
+
+  AT42QT2120::KeyControl key_controll;
+
   Serial.begin(115200);
 
   Wire.setPins(5, 4);
@@ -54,12 +57,33 @@ void setup() {
 
   touch_sensor.attachChangeCallback(changeLineActivated);
 
+  key_controll = touch_sensor.getKeyControl(0);
+  key_controll.adjacent_key_suppression_group = 1;
+
+  touch_sensor.setKeyControl(0,key_controll);
+
+  key_controll = touch_sensor.getKeyControl(1);
+  key_controll.adjacent_key_suppression_group = 1;
+
+  touch_sensor.setKeyControl(1,key_controll);
+
   Serial.println("waiting for touch...");
+
+  key_controll = touch_sensor.getKeyControl(2);
+  key_controll.adjacent_key_suppression_group = 1;
+
+  touch_sensor.setKeyControl(2,key_controll);
+
+  key_controll = touch_sensor.getKeyControl(3);
+  key_controll.adjacent_key_suppression_group = 1;
+
+  touch_sensor.setKeyControl(3,key_controll);
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  delay(10);
+  delay(1000);
   
   // if(val > 7) val = 0;
   // Serial.printf("Test Pin: %d\n", val);
@@ -80,16 +104,19 @@ void loop() {
   }
 
   
-  if (change_line_activated)
-  {
+  // if (change_line_activated)
+  // {
     change_line_activated = false;
     AT42QT2120::Status status = touch_sensor.getStatus();
-    if (touch_sensor.anyTouched(status))
-    {
-      Serial.printf("status.keys: %X", status.keys);
-    }
-  }
+    Serial.printf("status.keys: %X", status.keys);
+    Serial.println();
+    // if (touch_sensor.anyTouched(status))
+    // {
+    //   Serial.printf("status.keys: %X", status.keys);
+    // }
+  // }
 
+ 
 }
 
 void changeLineActivated()
