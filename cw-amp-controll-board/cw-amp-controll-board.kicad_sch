@@ -1485,6 +1485,8 @@
     (uuid ff5c59d2-ec4a-4384-bfc0-f89d10fdf8a6)
   )
 
+  (no_connect (at 245.11 111.76) (uuid dc46700f-1ea9-4315-9dfd-f582d03fb56d))
+
   (wire (pts (xy 205.74 38.1) (xy 212.09 38.1))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 001bfefd-383f-4ef2-b02b-b2f7b25dc15a)

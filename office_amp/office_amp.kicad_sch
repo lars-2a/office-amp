@@ -1184,9 +1184,6 @@
     (path "/00000000-0000-0000-0000-000060794134/6140b155-fb8d-4682-bfd5-1177aa87d4ce"
       (reference "U11") (unit 1) (value "TL084") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
-    (path "/00000000-0000-0000-0000-000060794134/915dba07-119d-4eea-84a1-480a3e6ce4d2"
-      (reference "U11") (unit 2) (value "TL084") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
-    )
     (path "/00000000-0000-0000-0000-000060794134/db9e73d1-f008-4120-bb3d-74b340caa85e"
       (reference "U11") (unit 3) (value "TL084") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
