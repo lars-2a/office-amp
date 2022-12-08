@@ -3,33 +3,21 @@
 
 #include "Portexpander.h"
 
-PortExpander *portExpander;
+PortExpander portExpander(&Wire);
 
 void setup() {
-  Wire.setPins(5, 4);
-  Wire.setClock(10000);
-  Wire.begin();
-
-  // put your setup code here, to run once:
   Serial.begin(115200);
 
   delay(1000);
   Serial.println("INIT");
 
-  PortExpander p(&Wire);
-  portExpander = &p;
+  Wire.setPins(5, 4);
+  Wire.setClock(10000);
+  Wire.begin();
 }
 
 void loop() {
   static uint8_t state = LOW;
 
-  // if (state == LOW) {
-  //   state = HIGH;
-  //   portExpander->setPortPin(ExpanderPortPinFunction::kPinLedBt, HIGH);
-  // } else {
-  //   state = LOW;
-  //   portExpander->setPortPin(ExpanderPortPinFunction::kPinLedBt, LOW);
-  // }
-
-  delay(1000);
+  delay(30);
 }
