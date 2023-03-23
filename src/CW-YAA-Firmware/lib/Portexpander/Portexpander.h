@@ -5,7 +5,7 @@
 #include <PCF8574.h>
 #include <Wire.h>
 
-enum class ExpanderPortPinFunction {
+enum class PortExpanderPin {
   kPinAmpShutdown = 0u,
   kPinPinNotAmpMute = 1u,
   kPinAmpGain0 = 2u,
@@ -19,7 +19,8 @@ enum class ExpanderPortPinFunction {
   kPinBtMute = 14u,
   kPinLedAnalogInt = 15u,
   kPinLedAnalogExt = 16u,
-  kPinLedBt = 17u
+  kPinLedBt = 17u,
+  kEndMarker = 18u
 };
 
 class PortExpander {
@@ -33,7 +34,9 @@ class PortExpander {
  public:
   PortExpander(TwoWire *pWire);
 
-  void setPortPin(ExpanderPortPinFunction pin, uint8_t value);
+  void setPortPin(PortExpanderPin pin, uint8_t value);
+
+  uint8_t readPortPin(PortExpanderPin pin);
 };
 
 #endif

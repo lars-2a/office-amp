@@ -27,36 +27,65 @@ PortExpander::PortExpander(TwoWire *pWire) {
   portExpander2_->digitalWrite(7, HIGH);
 }
 
-void PortExpander::setPortPin(ExpanderPortPinFunction pin, uint8_t value) {
+void PortExpander::setPortPin(PortExpanderPin pin, uint8_t value) {
   uint8_t portPin = static_cast<uint8_t>(pin);
 
-  if (NULL == portExpander2_) {
-    Serial.println("NULL Value in Portexpander");
-  } else {
-    switch (pin) {
-      case ExpanderPortPinFunction::kPinAmpShutdown:
-      case ExpanderPortPinFunction::kPinPinNotAmpMute:
-      case ExpanderPortPinFunction::kPinAmpGain0:
-      case ExpanderPortPinFunction::kPinAmpGain1:
-      case ExpanderPortPinFunction::kPinSelectAnalog:
-      case ExpanderPortPinFunction::kPinSelectBt:
-        portExpander1_->digitalWrite(portPin, value);
-        break;
+  switch (pin) {
+    case PortExpanderPin::kPinAmpShutdown:
+    case PortExpanderPin::kPinPinNotAmpMute:
+    case PortExpanderPin::kPinAmpGain0:
+    case PortExpanderPin::kPinAmpGain1:
+    case PortExpanderPin::kPinSelectAnalog:
+    case PortExpanderPin::kPinSelectBt:
+      portExpander1_->digitalWrite(portPin, value);
+      break;
 
-      case ExpanderPortPinFunction::kPinBtPause:
-      case ExpanderPortPinFunction::kPinBtNext:
-      case ExpanderPortPinFunction::kPinBtPrev:
-      case ExpanderPortPinFunction::kPinBtOnOff:
-      case ExpanderPortPinFunction::kPinBtMute:
-      case ExpanderPortPinFunction::kPinLedAnalogInt:
-      case ExpanderPortPinFunction::kPinLedAnalogExt:
-      case ExpanderPortPinFunction::kPinLedBt:
-        portPin = portPin - 10;
-        portExpander2_->digitalWrite(portPin, value);
-        break;
+    case PortExpanderPin::kPinBtPause:
+    case PortExpanderPin::kPinBtNext:
+    case PortExpanderPin::kPinBtPrev:
+    case PortExpanderPin::kPinBtOnOff:
+    case PortExpanderPin::kPinBtMute:
+    case PortExpanderPin::kPinLedAnalogInt:
+    case PortExpanderPin::kPinLedAnalogExt:
+    case PortExpanderPin::kPinLedBt:
+      portPin = portPin - 10;
+      portExpander2_->digitalWrite(portPin, value);
+      break;
 
-      default:
-        break;
-    }
+    default:
+      break;
   }
+}
+
+uint8_t PortExpander::readPortPin(PortExpanderPin pin) {
+  uint8_t portPin = static_cast<uint8_t>(pin);
+  uint8_t returnValue = 0;
+
+  switch (pin) {
+    case PortExpanderPin::kPinAmpShutdown:
+    case PortExpanderPin::kPinPinNotAmpMute:
+    case PortExpanderPin::kPinAmpGain0:
+    case PortExpanderPin::kPinAmpGain1:
+    case PortExpanderPin::kPinSelectAnalog:
+    case PortExpanderPin::kPinSelectBt:
+      returnValue = portExpander1_->digitalRead(portPin);
+      break;
+
+    case PortExpanderPin::kPinBtPause:
+    case PortExpanderPin::kPinBtNext:
+    case PortExpanderPin::kPinBtPrev:
+    case PortExpanderPin::kPinBtOnOff:
+    case PortExpanderPin::kPinBtMute:
+    case PortExpanderPin::kPinLedAnalogInt:
+    case PortExpanderPin::kPinLedAnalogExt:
+    case PortExpanderPin::kPinLedBt:
+      portPin = portPin - 10;
+      returnValue = portExpander2_->digitalRead(portPin);
+      break;
+
+    default:
+      break;
+  }
+
+  return returnValue;
 }
