@@ -56,11 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|109020001|97820001|00000000-0000-0000-0000-00005fc6c704|88e7319e-e788-4ad0-b393-5f2c11dcbda5",
-        "courtyards_overlap|95714610|62250001|00000000-0000-0000-0000-00005f53cd55|77400ccd-277f-4c1a-ab13-786ff9eabdfd",
-        "courtyards_overlap|95714610|62250001|77400ccd-277f-4c1a-ab13-786ff9eabdfd|00000000-0000-0000-0000-00005f53cd55"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -181,7 +177,7 @@
       ],
       "track_widths": [
         0.0,
-        25.0
+        0.4
       ],
       "via_dimensions": [
         {
@@ -433,8 +429,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 1.3,
+        "via_drill": 0.8,
         "wire_width": 6
       },
       {
@@ -449,9 +445,9 @@
         "name": "HighPower",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.8,
-        "via_diameter": 1.0,
-        "via_drill": 0.6,
+        "track_width": 1.0,
+        "via_diameter": 1.3,
+        "via_drill": 0.8,
         "wire_width": 6
       },
       {
@@ -467,8 +463,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 1.3,
+        "via_drill": 0.8,
         "wire_width": 6
       }
     ],
