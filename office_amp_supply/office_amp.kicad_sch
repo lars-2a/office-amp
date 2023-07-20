@@ -655,77 +655,6 @@
         )
       )
     )
-    (symbol "Jumper:SolderJumper_2_Bridged" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "JP" (at 0 2.032 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SolderJumper_2_Bridged" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "solder jumper SPST" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Solder Jumper, 2-pole, closed/bridged" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SolderJumper*Bridged*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SolderJumper_2_Bridged_0_1"
-        (rectangle (start -0.508 0.508) (end 0.508 -0.508)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (arc (start -0.254 1.016) (mid -1.2656 0) (end -0.254 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start -0.254 1.016) (mid -1.2656 0) (end -0.254 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -0.254 1.016)
-            (xy -0.254 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.254 1.016)
-            (xy 0.254 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0.254 -1.016) (mid 1.2656 0) (end 0.254 1.016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0.254 -1.016) (mid 1.2656 0) (end 0.254 1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "SolderJumper_2_Bridged_1_1"
-        (pin passive line (at -3.81 0 0) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 2.54)
-          (name "B" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Mechanical:Fiducial" (in_bom yes) (on_board yes)
       (property "Reference" "FID" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1855,6 +1784,10 @@
     (stroke (width 0) (type default))
     (uuid 26b8cc47-da11-48ee-9d67-8f4b286e0c87)
   )
+  (wire (pts (xy 74.93 257.81) (xy 74.93 259.08))
+    (stroke (width 0) (type default))
+    (uuid 2884250d-15b7-4f83-94a5-763e44e32fc0)
+  )
   (wire (pts (xy 347.98 48.26) (xy 347.98 49.53))
     (stroke (width 0) (type default))
     (uuid 2aa02dbf-41ad-4b81-91e6-7ecf56429ead)
@@ -2235,6 +2168,10 @@
     (stroke (width 0) (type default))
     (uuid aeb97273-9629-491d-b25c-53a913d4ed5d)
   )
+  (wire (pts (xy 72.39 257.81) (xy 74.93 257.81))
+    (stroke (width 0) (type default))
+    (uuid b0b2e283-a048-435e-ba3e-ea395efb1870)
+  )
   (wire (pts (xy 279.4 59.69) (xy 279.4 60.96))
     (stroke (width 0) (type default))
     (uuid b16ce6b6-344f-4692-a3c7-09401b5748a3)
@@ -2330,10 +2267,6 @@
   (wire (pts (xy 176.53 198.12) (xy 190.5 198.12))
     (stroke (width 0) (type default))
     (uuid cd2f305c-e803-4b38-9ed5-8a3b8dfa864e)
-  )
-  (wire (pts (xy 316.23 106.68) (xy 321.31 106.68))
-    (stroke (width 0) (type default))
-    (uuid ce0c1e72-5760-46fd-a9bf-620a323ec1bb)
   )
   (wire (pts (xy 124.46 186.69) (xy 121.92 186.69))
     (stroke (width 0) (type default))
@@ -2459,7 +2392,7 @@
     (stroke (width 0) (type default))
     (uuid fe3d93a9-70d0-468e-94cd-08bb6f317c3e)
   )
-  (wire (pts (xy 308.61 106.68) (xy 304.8 106.68))
+  (wire (pts (xy 304.8 106.68) (xy 321.31 106.68))
     (stroke (width 0) (type default))
     (uuid ff3f1a43-cf64-4ef8-883f-d581dfd1eea7)
   )
@@ -2551,23 +2484,23 @@
     )
   )
 
-  (symbol (lib_id "Device:CP") (at 176.53 193.04 180) (unit 1)
+  (symbol (lib_id "Device:CP") (at 176.53 193.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 08e26e9c-1ff5-4b82-b999-4ecec5e311d5)
-    (property "Reference" "C5" (at 173.5328 194.2084 0)
+    (property "Reference" "C5" (at 179.5272 191.8716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1000µF" (at 173.5328 191.897 0)
+    (property "Value" "1000µF" (at 179.5272 194.183 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" (at 175.5648 189.23 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" (at 177.4952 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 176.53 193.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d4124ec2-fb3c-47e9-b9b1-d155f66e45d8))
-    (pin "2" (uuid 60fe19a8-70bf-45b3-a4dd-ab683ae7c1b5))
+    (pin "1" (uuid 4b29a400-f640-4c9e-9462-80edb57cfafb))
+    (pin "2" (uuid 26a74008-2771-405c-b22c-0b8350d6ae0d))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -2592,7 +2525,7 @@
     (property "Datasheet" "~" (at 359.41 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dfe1c64b-e9ac-48a0-868c-5871704c437f))
+    (pin "1" (uuid feab31c4-5dda-4b70-bf5d-beee9b9c9b17))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -2667,8 +2600,8 @@
     (property "Datasheet" "~" (at 266.7 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d4e40c69-fd38-4665-a239-b687a48c37a8))
-    (pin "2" (uuid 2c5301bc-bfbe-4fda-ad9f-05fee2abe991))
+    (pin "1" (uuid 70bd946b-231c-4793-97c2-c239cc2b0191))
+    (pin "2" (uuid c1ae1655-a833-4cf0-b142-17de94333beb))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -3004,9 +2937,9 @@
     (property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" (at 336.55 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dddabc15-b070-470c-b5ba-323faaf7bf01))
-    (pin "2" (uuid efb9206d-6407-4889-b19e-95bae71a20bd))
-    (pin "3" (uuid 4becf725-4299-490a-ac85-461642ca8736))
+    (pin "1" (uuid 4a794f56-dcda-4d7d-a146-f906f3611d84))
+    (pin "2" (uuid b74c8861-0f18-4ea0-8fa3-e7c1fad176d3))
+    (pin "3" (uuid 7c7b4b98-67bf-4d4f-a6f9-660c4842d379))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -3222,16 +3155,16 @@
     )
   )
 
-  (symbol (lib_id "Device:CP") (at 190.5 193.04 180) (unit 1)
+  (symbol (lib_id "Device:CP") (at 190.5 193.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55ac6180-7e1f-4ef7-88f2-2b8f8278b91f)
-    (property "Reference" "C6" (at 187.5028 194.2084 0)
+    (property "Reference" "C6" (at 193.4972 191.8716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1000µF" (at 187.5028 191.897 0)
+    (property "Value" "1000µF" (at 193.4972 194.183 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" (at 189.5348 189.23 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" (at 191.4652 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 193.04 0)
@@ -3616,8 +3549,8 @@
     (property "Datasheet" "~" (at 306.07 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cbf5da73-62d8-4354-b31b-320694f1bed8))
-    (pin "2" (uuid ffbe8b68-64f5-4d27-8051-365ccd2bf0ad))
+    (pin "1" (uuid b523a28b-efc0-4f14-9394-2983719114ee))
+    (pin "2" (uuid 0f0c6ea2-1f2b-47d3-9614-e6ade745c394))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -3819,8 +3752,8 @@
     (property "Datasheet" "~" (at 313.69 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b3944fa4-aea8-45e1-8476-4e77f4b80cc4))
-    (pin "2" (uuid 1cdb5f12-b7c0-47d2-9163-e63ca29a855e))
+    (pin "1" (uuid 75f0045f-8f09-45ef-8464-b42cd3c8f0d3))
+    (pin "2" (uuid a58f749a-eb21-448b-8a5a-e18e3b5810f9))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -3871,8 +3804,8 @@
     (property "Datasheet" "~" (at 347.98 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 14261433-ab4e-4d8f-b76d-580a184644ce))
-    (pin "2" (uuid 258f8f3f-9c95-4076-ac68-659c28fcdb88))
+    (pin "1" (uuid f2731790-2323-41d9-af12-5123bb28553a))
+    (pin "2" (uuid 71359d66-4552-41e6-817c-e5d2fd3070b8))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -3978,32 +3911,6 @@
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
           (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Jumper:SolderJumper_2_Bridged") (at 312.42 106.68 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid bca1c253-0673-4a78-979f-481df266fef6)
-    (property "Reference" "STAR1" (at 312.42 101.473 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SolderJumper_2_Bridged" (at 312.42 103.7844 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" (at 312.42 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 312.42 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 314804b7-c102-41a2-8880-af8f132b5af2))
-    (pin "2" (uuid f2167900-69af-4f87-b6b6-7289f99e5cfb))
-    (instances
-      (project "office_amp"
-        (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
-          (reference "STAR1") (unit 1)
         )
       )
     )
@@ -4135,7 +4042,7 @@
     (property "Datasheet" "" (at 279.4 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bd125863-b0ee-4c98-8cec-e7fb2ea734a9))
+    (pin "1" (uuid 37c35e7b-efee-4380-9016-db2c15c4a2f1))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -4262,8 +4169,8 @@
     (property "Datasheet" "~" (at 153.67 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d1ca7936-de07-4ab7-9060-2b0e1558effe))
-    (pin "2" (uuid ec0b8564-de21-496b-bec1-18e5b911fcf9))
+    (pin "1" (uuid b2c1b9a3-2e58-43c0-afbe-0104bd24616e))
+    (pin "2" (uuid 34f8b59f-20e1-45d2-9a40-32a49c4d3634))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -4288,8 +4195,8 @@
     (property "Datasheet" "~" (at 320.04 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4b7440c1-c31c-49cd-94f0-09109abbb4e2))
-    (pin "2" (uuid d6404a15-ae41-4e59-9f8c-25c03c3ea636))
+    (pin "1" (uuid 19ca7cab-aea9-47f8-80a5-2cf0689018a3))
+    (pin "2" (uuid 8542b9cc-363c-413b-ad9b-ee3d8c7643ea))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -4314,8 +4221,8 @@
     (property "Datasheet" "~" (at 292.1 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8892916d-87f3-4111-a18b-be7fea71a6e2))
-    (pin "2" (uuid 42d3e17a-9d78-4896-b80b-72fe8de34376))
+    (pin "1" (uuid 956ff00d-296c-4409-bd90-ccea1047cfd3))
+    (pin "2" (uuid d543dfdc-cb7f-4bf2-aed5-454aeeaf4771))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -4369,8 +4276,8 @@
     (property "Datasheet" "~" (at 285.75 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f41dc759-7567-469b-918b-0fd7085712dc))
-    (pin "2" (uuid 1e289922-109e-4137-a0d8-298ce0a00f5c))
+    (pin "1" (uuid 62c51669-606e-4c09-9950-b505dec93dcc))
+    (pin "2" (uuid 2781dd44-523e-4517-ae39-d3fb16fae5c9))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -4455,6 +4362,31 @@
     )
   )
 
+  (symbol (lib_id "power:GNDREF") (at 74.93 259.08 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ee86bf19-8a37-4056-a38c-8eecd6950076)
+    (property "Reference" "#PWR030" (at 74.93 265.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GNDREF" (at 75.057 263.4742 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 74.93 259.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 74.93 259.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c065c26c-160b-46ae-b4ed-96d3990ae459))
+    (instances
+      (project "office_amp"
+        (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
+          (reference "#PWR030") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+12V") (at 347.98 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ef57003c-0197-499d-9051-22e68aa02916)
@@ -4470,7 +4402,7 @@
     (property "Datasheet" "" (at 347.98 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 006276c3-ee86-4565-91cb-5ce86ab2b3de))
+    (pin "1" (uuid 2a4c46f2-8d68-4c30-9349-77a1181a34a2))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
@@ -4495,7 +4427,7 @@
     (property "Datasheet" "" (at 279.4 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c3d95264-f0d1-459a-9cb0-6b843bbf95c3))
+    (pin "1" (uuid 354c9746-80b9-4b78-978e-6e2496d86417))
     (instances
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
