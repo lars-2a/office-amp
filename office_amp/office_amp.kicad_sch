@@ -596,6 +596,10 @@
   )
 
 
+  (wire (pts (xy 241.3 66.04) (xy 241.3 60.96))
+    (stroke (width 0) (type default))
+    (uuid 009ee6f2-de68-4fbe-b947-c37e548d15fc)
+  )
   (wire (pts (xy 153.67 101.6) (xy 153.67 95.25))
     (stroke (width 0) (type default))
     (uuid 037ecc83-ed0c-450a-b6df-b9cf9f186ebd)
@@ -639,6 +643,10 @@
   (wire (pts (xy 228.6 55.88) (xy 271.78 55.88))
     (stroke (width 0) (type default))
     (uuid 2224c699-4d1e-4689-b835-73636e810930)
+  )
+  (wire (pts (xy 241.3 60.96) (xy 228.6 60.96))
+    (stroke (width 0) (type default))
+    (uuid 265845f6-65c9-4790-b0e7-c2d414f8d0ce)
   )
   (wire (pts (xy 134.62 69.85) (xy 134.62 83.82))
     (stroke (width 0) (type default))
@@ -1102,6 +1110,31 @@
       (project "office_amp"
         (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
           (reference "#PWR074") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GNDREF") (at 241.3 66.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid dc7ffdbf-4ef1-410b-99ab-cd95efc2733c)
+    (property "Reference" "#PWR01" (at 241.3 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GNDREF" (at 241.427 70.4342 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 241.3 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 241.3 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 070c659e-82dc-4544-b1dd-69e307d45511))
+    (instances
+      (project "office_amp"
+        (path "/2de1ffee-2174-41d2-8969-68b8d21e5a7d"
+          (reference "#PWR01") (unit 1)
         )
       )
     )
